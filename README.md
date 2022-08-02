@@ -7,7 +7,7 @@ Helpers for working with hexadecimal color values.
 ### hexadecimal.contrast
 
 ```javascript
-import hexadecimal from '@agarciga/hexadecimal-color';
+import hexadecimal from 'hexadecimal-color';
 ...
 const theme = hexadecimal.contrast(color); // will return dark or light depending on 'color'
 ...
@@ -16,7 +16,7 @@ const theme = hexadecimal.contrast(color); // will return dark or light dependin
 ### hexadecimal.unhash
 
 ```javascript
-import hexadecimal from '@agarciga/hexadecimal-color';
+import hexadecimal from 'hexadecimal-color';
 ...
 const color = "#ff5000";
 const value = hexadecimal.unhash(color);
@@ -27,7 +27,7 @@ console.log(value); // will print 'ff5000' in the console
 ### hexadecimal.expand
 
 ```javascript
-import hexadecimal from '@agarciga/hexadecimal-color';
+import hexadecimal from 'hexadecimal-color';
 ...
 const color = "#f50";
 const value = hexadecimal.expand(color);
@@ -38,7 +38,7 @@ console.log(value); // will print 'ff5500' in the console
 ### hexadecimal.toRGB
 
 ```javascript
-import hexadecimal from '@agarciga/hexadecimal-color';
+import hexadecimal from 'hexadecimal-color';
 ...
 const color = "#fff";
 const value = hexadecimal.toRGB(color);
@@ -49,7 +49,7 @@ console.log(value); // will print [255, 255, 255] in the console
 ### hexadecimal.isColor
 
 ```javascript
-import hexadecimal from '@agarciga/hexadecimal-color';
+import hexadecimal from 'hexadecimal-color';
 ...
 const color = "#fff";
 const value = hexadecimal.isColor(color);

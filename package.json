@@ -1,5 +1,5 @@
 {
-  "name": "@agarciga/hexadecimal-color",
+  "name": "hexadecimal-color",
   "version": "1.0.0",
   "description": "Helpers for working with hexadecial color values",
   "main": "lib/index.js",
