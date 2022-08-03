@@ -1,5 +1,9 @@
 import { toRGB } from ".";
-
+/**
+ * Returns if the given hexadecimal CSS color value is 'dark' or 'light'
+ * @param value string Hexadecimal CSS color value
+ * @returns 'dark' | 'light'
+ */
 export const contrast = (value: string): 'dark' | 'light' => {
     const [r, g, b] = toRGB(value);
 

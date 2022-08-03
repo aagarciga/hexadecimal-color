@@ -1,23 +1,23 @@
-import { hexadecimal } from "../src"
+import { hexadecimalColor } from "../src"
 
-describe("hexadecimal.expand", () => {
+describe("hexadecimalColor.expand", () => {
     test("0", () => {
-        let result: any = hexadecimal.expand("ccc")
+        let result: any = hexadecimalColor.expand("ccc")
         expect(result).toBe("cccccc")
     })
 
     test("1", () => {
-        let result: any = hexadecimal.expand("abc")
+        let result: any = hexadecimalColor.expand("abc")
         expect(result).toBe("aabbcc")
     })
 
     test("2", () => {
-        let result: any = hexadecimal.expand("Abc")
+        let result: any = hexadecimalColor.expand("Abc")
         expect(result).toBe("AAbbcc")
     })
 
     test("3", () => {
-        let result: any = hexadecimal.expand("")
+        let result: any = hexadecimalColor.expand("")
         expect(result).toBe("")
     })
 })

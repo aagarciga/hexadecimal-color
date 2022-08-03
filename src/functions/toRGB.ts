@@ -1,6 +1,11 @@
 import { unhash, expand, isColor } from ".";
 
-
+/**
+ * Converts a Hexadecimal CSS color value into an array object with format [r,g,b].
+ * Each array element will contain the corresponding 0-255 value respectively. 
+ * @param value string Hexadecimal CSS color value
+ * @returns string[]
+ */
 export const toRGB = (value: string): number[] => {
     if (value.charAt(0) === '#') {
         value = unhash(value)

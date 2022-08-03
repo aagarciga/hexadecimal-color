@@ -1,14 +1,14 @@
 {
   "name": "hexadecimal-color",
-  "version": "1.0.0",
-  "description": "Helpers for working with hexadecial color values",
+  "version": "1.0.2",
+  "description": "Helper functions for working with 6-character RRGGBB CSS and 3-character RGB shorthand Hexadecimal color values.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "prepublish": "tsc --project tsconfig.build.json"
   },
   "repository": {

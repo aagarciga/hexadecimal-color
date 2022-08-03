@@ -11,3 +11,6 @@ lib
 
 # package
 *.tgz
+
+# coverage
+coverage

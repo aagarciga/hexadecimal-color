@@ -1,24 +1,24 @@
-import { hexadecimal } from "../src"
+import hexColor from "../src"
 
-describe("hexadecimal.toRGB", () => {
+describe("hexadecimalColor.toRGB", () => {
     test("1", () => {
-        let result: any = hexadecimal.toRGB("fff")
+        let result: any = hexColor.toRGB("fff")
         expect(result).toEqual([255, 255, 255])
     })
 
     test("4", () => {
-        let result: any = hexadecimal.toRGB('#fff')
+        let result: any = hexColor.toRGB('#fff')
         expect(result).toEqual([255, 255, 255])
     })
 
     test("5", () => {
-        let result: any = hexadecimal.toRGB('#ffffff')
+        let result: any = hexColor.toRGB('#ffffff')
         expect(result).toEqual([255, 255, 255])
     })
 
     test("3", () => {
         let callFunction: any = () => {
-            hexadecimal.toRGB('@fff')
+            hexColor.toRGB('@fff')
         }
 
         expect(callFunction).toThrow('Value is not a correct hexadecimal color value.')
@@ -26,7 +26,7 @@ describe("hexadecimal.toRGB", () => {
 
     test("4", () => {
         let callFunction: any = () => {
-            hexadecimal.toRGB('ffff')
+            hexColor.toRGB('ffff')
         }
 
         expect(callFunction).toThrow('Value is not a correct hexadecimal color value.')
@@ -34,7 +34,7 @@ describe("hexadecimal.toRGB", () => {
 
     test("5", () => {
         let callFunction: any = () => {
-            hexadecimal.toRGB('ZPQ')
+            hexColor.toRGB('ZPQ')
         }
 
         expect(callFunction).toThrow('Value is not a correct hexadecimal color value.')
