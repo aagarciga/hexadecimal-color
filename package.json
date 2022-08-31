@@ -1,6 +1,6 @@
 {
   "name": "hexadecimal-color",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Helper functions for working with 6-character RRGGBB CSS and 3-character RGB shorthand Hexadecimal color values.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,6 +16,7 @@
     "url": "git+https://github.com/aagarciga/hexadecimal-color.git"
   },
   "keywords": [
+    "hexadecimal-color",
     "hexadecimal",
     "expand",
     "unhash",
