@@ -20,4 +20,9 @@ describe("hexadecimalColor.expand", () => {
         let result: any = hexadecimalColor.expand("")
         expect(result).toBe("")
     })
+
+    test("4", () => {
+        let result: any = hexadecimalColor.expand("f00")
+        expect(result).toBe("ff0000")
+    })
 })
